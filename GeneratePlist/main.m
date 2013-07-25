@@ -7,8 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Util.h"
 
 int main(int argc, char *argv[])
-{
-    return NSApplicationMain(argc, (const char **)argv);
+{        
+    [Util generatePlist:@"mrts"];
+    [Util generatePlist:@"bchtmb"];
+    [Util generatePlist:@"tmbchg"];
+    [Util generatePlist:@"ctltni"];
+    [Util generatePlist:@"ctlsul"];
+    [Util generatePlist:@"chethi"];
+
 }
