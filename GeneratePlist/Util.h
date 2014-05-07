@@ -18,4 +18,6 @@
 
 +(void)generatePlist:(NSString *)filePrefix;
 
++(void)generateCombinedPlist:(NSArray *)files;
+
 @end

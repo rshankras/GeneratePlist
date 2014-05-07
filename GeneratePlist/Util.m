@@ -86,4 +86,50 @@
     return timings;
 }
 
+
+// Read the filenames,
+// Open file, and add title to new array object
+// add index
+// add station no
+// add route.
+
++(void)generateCombinedPlist:(NSArray *)files
+{
+    NSString *path;
+    NSArray  *location;
+    NSMutableArray *newFile = [[NSMutableArray alloc] init];
+    NSMutableArray *recent = [[NSMutableArray alloc] init];
+    NSArray *recent_temp = [[NSArray alloc] init];
+    NSMutableDictionary *content = [[NSMutableDictionary alloc] init];
+    NSInteger index = 0;
+    NSString *stationName;
+    NSString *stationNo;
+    
+    for (NSString *file in files)
+    {
+       path = [[NSBundle mainBundle] pathForResource:file ofType:@"plist"];
+       location= [NSArray arrayWithContentsOfFile:path];
+        
+        for (NSDictionary *row in location)
+        {
+            content = [[NSMutableDictionary alloc] init];
+            [content setObject:[NSNumber numberWithInteger:index] forKey:@"identifier"];
+            
+            stationName = [row objectForKey:@"title"];
+            stationNo = [row objectForKey:@"no"];
+            
+            [content setObject:stationName forKey:@"title"];
+            [content setObject:stationNo forKey:@"no"];
+            [content setObject:file forKey:@"route"];
+            [newFile addObject:content];
+            index ++;
+        }
+    }
+    
+    NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"title"  ascending:YES];
+    recent_temp=[newFile sortedArrayUsingDescriptors:[NSArray arrayWithObjects:descriptor,nil]];
+    recent = [recent_temp copy];
+    [Util saveContent:recent toFile:[NSString stringWithFormat:@"allstations.plist"]];
+}
+
 @end
