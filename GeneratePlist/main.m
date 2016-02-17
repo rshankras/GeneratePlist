@@ -11,18 +11,19 @@
 
 int main(int argc, char *argv[])
 {        
-  //  [Util generatePlist:@"mrts"];
-  //  [Util generatePlist:@"bchtmb"];
-  //  [Util generatePlist:@"tmbchg"];
-  //  [Util generatePlist:@"bchtni"];
+   //[Util generatePlist:@"mrts"];
+   // [Util generatePlist:@"bchtmb"];
+   // [Util generatePlist:@"tmbchg"];
+   // [Util generatePlist:@"bchtni"];
    // [Util generatePlist:@"bchsul"];
    // [Util generatePlist:@"ctltni"];
    // [Util generatePlist:@"ctlsul"];
-  //  [Util generatePlist:@"chethi"];
+   // [Util generatePlist:@"chethi"];
+      [Util generatePlist:@"metro"];
     
-    NSArray *locations = [[NSArray alloc] initWithObjects:@"mrts",@"bchsul",@"bchtmb",@"bchtni",@"tmbchg",nil];
+  //  NSArray *locations = [[NSArray alloc] initWithObjects:@"mrts",@"bchsul",@"bchtmb",@"bchtni",@"tmbchg",@"metro",nil];
     
-    [Util generateCombinedPlist:locations];
+   // [Util generateCombinedPlist:locations];
     
     
 

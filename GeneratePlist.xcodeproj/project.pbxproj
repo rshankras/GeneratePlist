@@ -32,6 +32,11 @@
 		4804E9EF178C88DB007DD98A /* ctltni_WD2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4804E9E2178C88DB007DD98A /* ctltni_WD2.csv */; };
 		4804E9F0178C88DB007DD98A /* ctltni_WE1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4804E9E3178C88DB007DD98A /* ctltni_WE1.csv */; };
 		4804E9F1178C88DB007DD98A /* ctltni_WE2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4804E9E4178C88DB007DD98A /* ctltni_WE2.csv */; };
+		4823D28E1C6E4B81000D78B8 /* metro_main.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4823D2891C6E4B81000D78B8 /* metro_main.csv */; };
+		4823D28F1C6E4B81000D78B8 /* metro_WD1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4823D28A1C6E4B81000D78B8 /* metro_WD1.csv */; };
+		4823D2901C6E4B81000D78B8 /* metro_WD2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4823D28B1C6E4B81000D78B8 /* metro_WD2.csv */; };
+		4823D2911C6E4B81000D78B8 /* metro_WE1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4823D28C1C6E4B81000D78B8 /* metro_WE1.csv */; };
+		4823D2921C6E4B81000D78B8 /* metro_WE2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4823D28D1C6E4B81000D78B8 /* metro_WE2.csv */; };
 		4837818A1789564000B7F1F4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 483781891789564000B7F1F4 /* Cocoa.framework */; };
 		483781941789564000B7F1F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 483781921789564000B7F1F4 /* InfoPlist.strings */; };
 		483781961789564000B7F1F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 483781951789564000B7F1F4 /* main.m */; };
@@ -88,6 +93,11 @@
 		4804E9E2178C88DB007DD98A /* ctltni_WD2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ctltni_WD2.csv; path = GeneratePlist/ctltni_WD2.csv; sourceTree = "<group>"; };
 		4804E9E3178C88DB007DD98A /* ctltni_WE1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ctltni_WE1.csv; path = GeneratePlist/ctltni_WE1.csv; sourceTree = "<group>"; };
 		4804E9E4178C88DB007DD98A /* ctltni_WE2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ctltni_WE2.csv; path = GeneratePlist/ctltni_WE2.csv; sourceTree = "<group>"; };
+		4823D2891C6E4B81000D78B8 /* metro_main.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = metro_main.csv; path = GeneratePlist/metro_main.csv; sourceTree = "<group>"; };
+		4823D28A1C6E4B81000D78B8 /* metro_WD1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = metro_WD1.csv; path = GeneratePlist/metro_WD1.csv; sourceTree = "<group>"; };
+		4823D28B1C6E4B81000D78B8 /* metro_WD2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = metro_WD2.csv; path = GeneratePlist/metro_WD2.csv; sourceTree = "<group>"; };
+		4823D28C1C6E4B81000D78B8 /* metro_WE1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = metro_WE1.csv; path = GeneratePlist/metro_WE1.csv; sourceTree = "<group>"; };
+		4823D28D1C6E4B81000D78B8 /* metro_WE2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = metro_WE2.csv; path = GeneratePlist/metro_WE2.csv; sourceTree = "<group>"; };
 		483781861789564000B7F1F4 /* GeneratePlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneratePlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		483781891789564000B7F1F4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4837818C1789564000B7F1F4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -141,6 +151,11 @@
 		4837817D1789564000B7F1F4 = {
 			isa = PBXGroup;
 			children = (
+				4823D2891C6E4B81000D78B8 /* metro_main.csv */,
+				4823D28A1C6E4B81000D78B8 /* metro_WD1.csv */,
+				4823D28B1C6E4B81000D78B8 /* metro_WD2.csv */,
+				4823D28C1C6E4B81000D78B8 /* metro_WE1.csv */,
+				4823D28D1C6E4B81000D78B8 /* metro_WE2.csv */,
 				487C10A6185B442C00DFE723 /* mrts.plist */,
 				487C109E185B441E00DFE723 /* bchsul.plist */,
 				487C109F185B441E00DFE723 /* bchtmb.plist */,
@@ -271,7 +286,7 @@
 		4837817E1789564000B7F1F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Ravi Shankar";
 			};
 			buildConfigurationList = 483781811789564000B7F1F4 /* Build configuration list for PBXProject "GeneratePlist" */;
@@ -299,6 +314,7 @@
 				483781941789564000B7F1F4 /* InfoPlist.strings in Resources */,
 				4837819A1789564000B7F1F4 /* Credits.rtf in Resources */,
 				4849327B183259DA00F4FA0C /* bchsul_main.csv in Resources */,
+				4823D28E1C6E4B81000D78B8 /* metro_main.csv in Resources */,
 				483781A01789564000B7F1F4 /* MainMenu.xib in Resources */,
 				487C10A7185B442C00DFE723 /* mrts.plist in Resources */,
 				4849327C183259DA00F4FA0C /* bchsul_WD1.csv in Resources */,
@@ -328,9 +344,11 @@
 				4804E9D2178BED33007DD98A /* ctltni_main.csv in Resources */,
 				4804E9D3178BED33007DD98A /* ctltni_WD1.csv in Resources */,
 				487C10A2185B441E00DFE723 /* bchsul.plist in Resources */,
+				4823D2911C6E4B81000D78B8 /* metro_WE1.csv in Resources */,
 				4804E9E5178C88DB007DD98A /* chethi_main.csv in Resources */,
 				4804E9E6178C88DB007DD98A /* chethi_WD1.csv in Resources */,
 				4804E9E7178C88DB007DD98A /* chethi_WD2.csv in Resources */,
+				4823D28F1C6E4B81000D78B8 /* metro_WD1.csv in Resources */,
 				48493283183259DA00F4FA0C /* bchtni_WE1.csv in Resources */,
 				4804E9E8178C88DB007DD98A /* chethi_WE1.csv in Resources */,
 				4804E9E9178C88DB007DD98A /* chethi_WE2.csv in Resources */,
@@ -340,9 +358,11 @@
 				4804E9ED178C88DB007DD98A /* ctlsul_WE1.csv in Resources */,
 				4804E9EE178C88DB007DD98A /* ctlsul_WE2.csv in Resources */,
 				4804E9EF178C88DB007DD98A /* ctltni_WD2.csv in Resources */,
+				4823D2901C6E4B81000D78B8 /* metro_WD2.csv in Resources */,
 				48493280183259DA00F4FA0C /* bchtni_main.csv in Resources */,
 				4804E9F0178C88DB007DD98A /* ctltni_WE1.csv in Resources */,
 				4804E9F1178C88DB007DD98A /* ctltni_WE2.csv in Resources */,
+				4823D2921C6E4B81000D78B8 /* metro_WE2.csv in Resources */,
 				487C10A4185B441E00DFE723 /* bchtni.plist in Resources */,
 				48493281183259DA00F4FA0C /* bchtni_WD1.csv in Resources */,
 			);
@@ -395,7 +415,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -405,6 +424,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -428,7 +448,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -457,6 +476,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeneratePlist/GeneratePlist-Prefix.pch";
 				INFOPLIST_FILE = "GeneratePlist/GeneratePlist-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "blogmines.com.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -469,6 +489,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeneratePlist/GeneratePlist-Prefix.pch";
 				INFOPLIST_FILE = "GeneratePlist/GeneratePlist-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "blogmines.com.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

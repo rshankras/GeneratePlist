@@ -16,7 +16,7 @@
     NSError *error;
     NSString *filePath =  [[NSBundle mainBundle] pathForResource:fileName ofType:@"csv"];
     NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
-    NSMutableArray *data = [[fileContent componentsSeparatedByCharactersInSet: [NSCharacterSet newlineCharacterSet]] mutableCopy];
+    NSMutableArray *data = [[fileContent componentsSeparatedByCharactersInSet: [NSCharacterSet characterSetWithCharactersInString:@"\n"]] mutableCopy];
     return data;
 }
 
@@ -57,16 +57,18 @@
     for (int count = 0; count < mrts_main_data.count; count++)
     {
         NSArray* arr = [Util getColumnValues:mrts_main_data fromIndex:count];
-        dict = [[NSMutableDictionary alloc] init];
-        [dict setObject:[NSNumber numberWithInteger:[[arr objectAtIndex:0] integerValue]] forKey:@"no"];
-        [dict setObject:[arr objectAtIndex:1] forKey:@"title"];
-        [dict setObject:[NSNumber numberWithFloat:[[arr objectAtIndex:2] floatValue]] forKey:@"lat"];
-        [dict setObject:[NSNumber numberWithFloat:[[arr objectAtIndex:3] floatValue]] forKey:@"long"];
-        [dict setObject:[timings_WD1 objectAtIndex:count] forKey:@"toStation1WDs"];
-        [dict setObject:[timings_WD2 objectAtIndex:[timings_WD2 count] - count -1] forKey:@"toStation2WDs"];
-        [dict setObject:[timings_WE1 objectAtIndex:count] forKey:@"toStation1WEs"];
-        [dict setObject:[timings_WE2 objectAtIndex:[timings_WE2 count] - count -1] forKey:@"toStation2WEs"];
-        [rootArray addObject:dict];
+        if (arr.count > 0) {
+            dict = [[NSMutableDictionary alloc] init];
+            [dict setObject:[NSNumber numberWithInteger:[[arr objectAtIndex:0] integerValue]] forKey:@"no"];
+            [dict setObject:[arr objectAtIndex:1] forKey:@"title"];
+            [dict setObject:[NSNumber numberWithFloat:[[arr objectAtIndex:2] floatValue]] forKey:@"lat"];
+            [dict setObject:[NSNumber numberWithFloat:[[arr objectAtIndex:3] floatValue]] forKey:@"long"];
+            [dict setObject:[timings_WD1 objectAtIndex:count] forKey:@"toStation1WDs"];
+            [dict setObject:[timings_WD2 objectAtIndex:[timings_WD2 count] - count -1] forKey:@"toStation2WDs"];
+            [dict setObject:[timings_WE1 objectAtIndex:count] forKey:@"toStation1WEs"];
+            [dict setObject:[timings_WE2 objectAtIndex:[timings_WE2 count] - count -1] forKey:@"toStation2WEs"];
+            [rootArray addObject:dict];
+        }
     }
     
     NSLog(@"%@", rootArray);
